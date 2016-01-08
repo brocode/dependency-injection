@@ -1,6 +1,8 @@
 package de.is24.provider
 
-class HelloWorldProvider(helloProvider: HelloProvider, worldProvider: WorldProvider) {
+import org.springframework.beans.factory.annotation.Autowired
+
+class HelloWorldProvider @Autowired() (helloProvider: HelloProvider, worldProvider: WorldProvider) {
 
   def helloWorld: String = {
     val hello = helloProvider.hello
