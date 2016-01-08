@@ -1,9 +1,9 @@
-package com.example
+package de.is24.example.manual
 
 import java.io.PrintStream
 
 import de.is24.business.printing.Printer
-import de.is24.provider.{HelloWorldProvider, WorldProvider, HelloProvider}
+import de.is24.provider.{HelloProvider, HelloWorldProvider, WorldProvider}
 
 trait HelloModule {
   lazy val helloProvider: HelloProvider = new HelloProvider()
